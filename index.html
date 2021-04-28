@@ -34,6 +34,13 @@
 	padding: 10px 10px;
 }
 
+.topbardropcolumn {
+	float: left;
+    text-align: right;
+	width: 25%;
+	padding: 10px 10px;
+}
+
 .row:after {
   	content: "";
   	display: table;
@@ -49,7 +56,6 @@
     padding: 10px;
     
     font-size: 18px;
-    text-align: center;
 }
 
 .topkeycard {
@@ -110,7 +116,11 @@ div{
 
 <body id="body">
     <div id= "topbar" class= "topbar">
-        DrumPad
+        <div id="topbarrow" class="row">
+            <div id="topbarlogo" class="columnview">DrumPad</div>
+            <div class="midspacecolumnview"></div>
+            <div class="topbardropcolumn">Acoustic</div>
+        </div>
     </div>
 
     <div id="topkeyrow" class="row">
