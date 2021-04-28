@@ -52,12 +52,37 @@
     text-align: center;
 }
 
-.keycard {
-	background-color: #666666;
+.topkeycard {
+	background-color: #e6b800;
   	border-radius: 5px;
   	text-align: center;
   	width: 100%;
   	height: 100%;
+}
+
+.midkeycard {
+	background-color: #e6e6e6;
+  	border-radius: 5px;
+  	text-align: center;
+  	width: 100%;
+  	height: 100%;
+}
+
+.spacekeycard {
+	background-color: #990000;
+  	border-radius: 5px;
+  	text-align: center;
+  	width: 100%;
+  	height: 100%;
+}
+
+.blackkeycontainer {
+ 	padding: 10px;
+    font-size: 18px;
+    color: black;
+ 	height: 100%;
+ 	width: 100%;
+ 	overflow-wrap: break-word;
 }
 
 .keycontainer {
@@ -67,6 +92,7 @@
  	width: 100%;
  	overflow-wrap: break-word;
 }
+
 
 body{
 	background-color: #404040;
@@ -90,29 +116,29 @@ div{
     <div id="topkeyrow" class="row">
         <div id= "topkeyrowleftcol" class="columnview">
             <div id="qkeycol" class="column">
-                <div id="qkey" class="keycard">
-                    <div class="keycontainer">
+                <div id="qkey" class="topkeycard">
+                    <div class="blackkeycontainer">
                         Q
                     </div>
                 </div>
             </div>
             <div id="wkeycol" class="column">
-                <div id="wkey" class="keycard">
-                    <div class="keycontainer">
+                <div id="wkey" class="topkeycard">
+                    <div class="blackkeycontainer">
                         W
                     </div>
                 </div>
             </div>
             <div id="ekeycol" class="column">
-                <div id="ekey" class="keycard">
-                    <div class="keycontainer">
+                <div id="ekey" class="topkeycard">
+                    <div class="blackkeycontainer">
                         E
                     </div>
                 </div>
             </div>
             <div id="rkeycol" class="column">
-                <div id="rkey" class="keycard">
-                    <div class="keycontainer">
+                <div id="rkey" class="topkeycard">
+                    <div class="blackkeycontainer">
                         R
                     </div>
                 </div>
@@ -121,29 +147,29 @@ div{
 
         <div id= "topkeyrowrightcol" class="columnview">
             <div id="ukeycol" class="column">
-                <div id="ukey" class="keycard">
-                    <div class="keycontainer">
+                <div id="ukey" class="topkeycard">
+                    <div class="blackkeycontainer">
                         U
                     </div>
                 </div>
             </div>
             <div id="ikeycol" class="column">
-                <div id="ikey" class="keycard">
-                    <div class="keycontainer">
+                <div id="ikey" class="topkeycard">
+                    <div class="blackkeycontainer">
                         I
                     </div>
                 </div>
             </div>
             <div id="okeycol" class="column">
-                <div id="okey" class="keycard">
-                    <div class="keycontainer">
+                <div id="okey" class="topkeycard">
+                    <div class="blackkeycontainer">
                         O
                     </div>
                 </div>
             </div>
             <div id="pkeycol" class="column">
-                <div id="pkey" class="keycard">
-                    <div class="keycontainer">
+                <div id="pkey" class="topkeycard">
+                    <div class="blackkeycontainer">
                         P
                     </div>
                 </div>
@@ -159,32 +185,32 @@ div{
         
         <div id="midkeyrowmidcol" class="middlemiddlecolumnview">
             <div id="fkeycol" class="column">
-                <div id="fkey" class="keycard">
-                    <div class="keycontainer">
+                <div id="fkey" class="midkeycard">
+                    <div class="blackkeycontainer">
                         F
                     </div>
                 </div>
             </div>
 
             <div id="gkeycol" class="column">
-                <div id="gkey" class="keycard">
-                    <div class="keycontainer">
+                <div id="gkey" class="midkeycard">
+                    <div class="blackkeycontainer">
                         G
                     </div>
                 </div>
             </div>
 
             <div id="hkeycol" class="column">
-                <div id="okey" class="keycard">
-                    <div class="keycontainer">
+                <div id="okey" class="midkeycard">
+                    <div class="blackkeycontainer">
                         H
                     </div>
                 </div>
             </div>
 
             <div id="jkeycol" class="column">
-                <div id="jkey" class="keycard">
-                    <div class="keycontainer">
+                <div id="jkey" class="midkeycard">
+                    <div class="blackkeycontainer">
                         J
                     </div>
                 </div>
@@ -202,7 +228,7 @@ div{
         </div>
 
         <div id="spacebarrowmidcol" class="middlemiddlecolumnview">
-                <div id="spacekey" class="keycard">
+                <div id="spacekey" class="spacekeycard">
                     <div class="keycontainer">
                         Space Bar
                     </div>
@@ -213,6 +239,7 @@ div{
 
         </div>
     </div>
+
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
