@@ -1,5 +1,6 @@
 // Play Key Function
-function play(id){
-    var audio = document.getElementById(id);
-    audio.play;
+function play(samplename){
+    var path = "Drum Samples/" + samplename + ".wav";
+    var audio = new Audio(path);
+    audio.play();
 }
