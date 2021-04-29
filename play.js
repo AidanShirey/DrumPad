@@ -1,10 +1,13 @@
 // Play Key Function
+var path = "Drum Samples/Acoustic/";
+
 function play(samplename){
-    var path = "Drum Samples/" + samplename + ".wav";
-    var audio = new Audio(path);
+    var mPath = path + samplename + ".wav";
+    var audio = new Audio(mPath);
     audio.play();
 }
- document.addEventListener("keydown", function(e){
+
+document.addEventListener("keydown", function(e){
     var key = e.key;
     switch (key){
         case "q":
@@ -62,20 +65,6 @@ function play(samplename){
     }
  });
 
-function setKeybinds(){
-    var qKey = document.getElementById("qkey");
-
-    var wKey = document.getElementById("wkey");
-
-    var eKey = document.getElementById("ekey");
-
-    var rKey = document.getElementById("rkey");
-
-    var uKey = document.getElementById("ukey");
-
-    var iKey = document.getElementById("ikey");
-
-    var oKey = document.getElementById("okey");
-
-    var pKey = document.getElementById("pkey");
+function setKeybinds(kitname){
+    path = "Drum Samples/" + kitname + "/";
 }

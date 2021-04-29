@@ -99,6 +99,50 @@
  	overflow-wrap: break-word;
 }
 
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    left:initial;
+    }
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 body{
 	background-color: #404040;
@@ -117,37 +161,48 @@ div{
 <body id="body">
     <div id= "topbar" class= "topbar">
         <div id="topbarrow" class="row">
-            <div id="topbarlogo" class="columnview">DrumPad</div>
+            <div id="topbarlogo" class="columnview">
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown</button>
+                    <div class="dropdown-content">
+                      <a onclick="setKeybinds('Acoustic')">Acoustic</a>
+                      <a onclick="setKeybinds('Electric')">Electric</a>
+                      <a onclick="setKeybinds('Vinyl')">Vinyl</a>
+                    </div>
+                </div>
+            </div>
             <div class="midspacecolumnview"></div>
-            <div class="topbardropcolumn">Acoustic</div>
+            <div class="topbardropcolumn">
+                DrumPad
+            </div>
         </div>
     </div>
 
     <div id="topkeyrow" class="row">
         <div id= "topkeyrowleftcol" class="columnview">
             <div id="qkeycol" class="column">
-                <div id="qkey" class="topkeycard" value="CyCdh_K3HfHat" onclick="play('CyCdh_K3HfHat')">
+                <div id="qkey" class="topkeycard" value="q_key" onclick="play('q_key')">
                     <div class="blackkeycontainer">
                         Q
                     </div>
                 </div>
             </div>
             <div id="wkeycol" class="column">
-                <div id="wkey" class="topkeycard" value="CyCdh_K3OpHat-02" onclick="play('CyCdh_K3OpHat-02')">
+                <div id="wkey" class="topkeycard" value="w_key" onclick="play('w_key')">
                     <div class="blackkeycontainer">
                         W
                     </div>
                 </div>
             </div>
             <div id="ekeycol" class="column">
-                <div id="ekey" class="topkeycard" value="CyCdh_K3OpHat-01" onclick="play('CyCdh_K3OpHat-01')">
+                <div id="ekey" class="topkeycard" value="e_key" onclick="play('e_key')">
                     <div class="blackkeycontainer">
                         E
                     </div>
                 </div>
             </div>
             <div id="rkeycol" class="column">
-                <div id="rkey" class="topkeycard" value="CyCdh_K3OpHat-03" onclick="play('CyCdh_K3OpHat-03')">
+                <div id="rkey" class="topkeycard" value="r_key" onclick="play('r_key')">
                     <div class="blackkeycontainer">
                         R
                     </div>
@@ -157,28 +212,28 @@ div{
 
         <div id= "topkeyrowrightcol" class="columnview">
             <div id="ukeycol" class="column">
-                <div id="ukey" class="topkeycard" value="CyCdh_K3ClHat-04" onclick="play('CyCdh_K3ClHat-04')">
+                <div id="ukey" class="topkeycard" value="u_key" onclick="play('u_key')">
                     <div class="blackkeycontainer">
                         U
                     </div>
                 </div>
             </div>
             <div id="ikeycol" class="column">
-                <div id="ikey" class="topkeycard" value="CyCdh_K3ClHat-03" onclick="play('CyCdh_K3ClHat-03')">
+                <div id="ikey" class="topkeycard" value="i_key" onclick="play('i_key')">
                     <div class="blackkeycontainer">
                         I
                     </div>
                 </div>
             </div>
             <div id="okeycol" class="column">
-                <div id="okey" class="topkeycard" value="CyCdh_K3Crash-07" onclick="play('CyCdh_K3Crash-07')">
+                <div id="okey" class="topkeycard" value="o_key" onclick="play('o_key')">
                     <div class="blackkeycontainer">
                         O
                     </div>
                 </div>
             </div>
             <div id="pkeycol" class="column">
-                <div id="pkey" class="topkeycard" value="CyCdh_K3Crash-02" onclick="play('CyCdh_K3Crash-02')">
+                <div id="pkey" class="topkeycard" value="p_key" onclick="play('p_key')">
                     <div class="blackkeycontainer">
                         P
                     </div>
@@ -195,7 +250,7 @@ div{
         
         <div id="midkeyrowmidcol" class="middlemiddlecolumnview">
             <div id="fkeycol" class="column">
-                <div id="fkey" class="midkeycard" value="CyCdh_K3SdSt-03" onclick="play('CyCdh_K3SdSt-03')">
+                <div id="fkey" class="midkeycard" value="f_key" onclick="play('f_key')">
                     <div class="blackkeycontainer">
                         F
                     </div>
@@ -203,7 +258,7 @@ div{
             </div>
 
             <div id="gkeycol" class="column">
-                <div id="gkey" class="midkeycard" value="CyCdh_K3Snr-09" onclick="play('CyCdh_K3Snr-10')">
+                <div id="gkey" class="midkeycard" value="g_key" onclick="play('g_key')">
                     <div class="blackkeycontainer">
                         G
                     </div>
@@ -211,7 +266,7 @@ div{
             </div>
 
             <div id="hkeycol" class="column">
-                <div id="hkey" class="midkeycard" value="CyCdh_K3Snr-10" onclick="play('CyCdh_K3Snr-09')">
+                <div id="hkey" class="midkeycard" value="h_key" onclick="play('h_key')">
                     <div class="blackkeycontainer">
                         H
                     </div>
@@ -219,7 +274,7 @@ div{
             </div>
 
             <div id="jkeycol" class="column">
-                <div id="jkey" class="midkeycard" value="CyCdh_K3Tom-01" onclick="play('CyCdh_K3Tom-01')">
+                <div id="jkey" class="midkeycard" value="j_key" onclick="play('j_key')">
                     <div class="blackkeycontainer">
                         J
                     </div>
@@ -238,7 +293,7 @@ div{
         </div>
 
         <div id="spacebarrowmidcol" class="middlemiddlecolumnview">
-                <div id="spacekey" class="spacekeycard" value="CyCdh_K3Kick-02" onclick="play('CyCdh_K3Kick-02')">
+                <div id="spacekey" class="spacekeycard" value="space_key" onclick="play('space_key')">
                     <div class="keycontainer">
                         Space Bar
                     </div>
