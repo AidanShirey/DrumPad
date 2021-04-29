@@ -51,7 +51,8 @@
 	float: left;
     text-align: right;
 	width: 25%;
-	padding: 10px 10px;
+	padding-top:23px;
+    padding-right:16px;
 }
 
 .row:after {
@@ -114,10 +115,10 @@
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #04AA6D;
+  background-color: #666666;
   color: white;
   padding: 16px;
-  font-size: 16px;
+  font-size: 18px;
   border: none;
 }
 
@@ -154,8 +155,6 @@
     left:initial;
     }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 body{
 	background-color: #404040;
@@ -177,7 +176,7 @@ div{
         <div id="topbarrow" class="row">
             <div id="topbarlogo" class="columnview">
                 <div class="dropdown">
-                    <button class="dropbtn">Dropdown</button>
+                    <button class="dropbtn">Change Kit</button>
                     <div class="dropdown-content">
                       <a onclick="setKeybinds('Acoustic')">Acoustic</a>
                       <a onclick="setKeybinds('Electric')">Electric</a>
@@ -187,7 +186,7 @@ div{
             </div>
             <div class="midspacecolumnview"></div>
             <div class="topbardropcolumn">
-                DrumPad
+               DrumPad
             </div>
         </div>
     </div>
@@ -195,21 +194,21 @@ div{
     <div id="topkeyrow" class="row">
         <div id= "topkeyrowleftcol" class="columnview">
             <div id="qkeycol" class="column">
-                <img id="qkey" src="Drum Icons/OpenCymbal.png" value="q_key" onclick="play('q_key')">
+                <img id="qkey" value="q_key" onclick="play('q_key')">
                     
             </img>
             </div>
             <div id="wkeycol" class="column">
-                <img id="wkey" src="Drum Icons/OpenCloseHat.png" value="w_key" onclick="play('w_key')">
+                <img id="wkey" value="w_key" onclick="play('w_key')">
             </img>
             </div>
             <div id="ekeycol" class="column">
-                <img id="ekey" src="Drum Icons/OpenCloseHat.png" value="e_key" onclick="play('e_key')">
+                <img id="ekey" value="e_key" onclick="play('e_key')">
                     
             </img>
             </div>
             <div id="rkeycol" class="column">
-                <img id="rkey" src="Drum Icons/OpenCloseHat.png" value="r_key" onclick="play('r_key')">
+                <img id="rkey" value="r_key" onclick="play('r_key')">
                     
             </img>
             </div>
@@ -217,18 +216,18 @@ div{
 
         <div id= "topkeyrowrightcol" class="columnview">
             <div id="ukeycol" class="column">
-                <img id="ukey" src="Drum Icons/OpenCymbal.png" value="u_key" onclick="play('u_key')"></img>
+                <img id="ukey" value="u_key" onclick="play('u_key')"></img>
             </div>
             <div id="ikeycol" class="column">
-                <img id="ikey" src="Drum Icons/OpenCymbal.png" value="i_key" onclick="play('i_key')">
+                <img id="ikey" value="i_key" onclick="play('i_key')">
                 </img>
             </div>
             <div id="okeycol" class="column">
-                <img id="okey" src="Drum Icons/OpenCymbal.png" value="o_key" onclick="play('o_key')">
+                <img id="okey" value="o_key" onclick="play('o_key')">
                 </img>
             </div>
             <div id="pkeycol" class="column">
-                <img id="pkey" src="Drum Icons/OpenCymbal.png" value="p_key" onclick="play('p_key')">
+                <img id="pkey" value="p_key" onclick="play('p_key')">
                 </img>
             </div>
         </div>
@@ -243,23 +242,23 @@ div{
         
         <div id="midkeyrowmidcol" class="middlemiddlecolumnview">
             <div id="fkeycol" class="column">
-                <img id="fkey" src="Drum Icons/SnareRim.png" value="f_key" onclick="play('f_key')">
+                <img id="fkey" value="f_key" onclick="play('f_key')">
                     
                 </img>
             </div>
 
             <div id="gkeycol" class="column">
-                <img id="gkey" src="Drum Icons/Snare.png" value="g_key" onclick="play('g_key')">
+                <img id="gkey" value="g_key" onclick="play('g_key')">
                 </img>
             </div>
 
             <div id="hkeycol" class="column">
-                <img id="hkey" src="Drum Icons/Snare.png" value="h_key" onclick="play('h_key')">
+                <img id="hkey" value="h_key" onclick="play('h_key')">
                 </img>
             </div>
 
             <div id="jkeycol" class="column">
-                <img id="jkey" src="Drum Icons/Tamborine.png" value="j_key" onclick="play('j_key')"></img>
+                <img id="jkey" value="j_key" onclick="play('j_key')"></img>
             </div>
         </div>
 
@@ -275,7 +274,7 @@ div{
 
 
         <div id="spacebarrowmidcol" class="midspacecolumnviewhalfhalf">
-                <img id="spacekey" src="Drum Icons/BassDrum.png" value="space_key" onclick="play('space_key')"></img>
+                <img id="spacekey" value="space_key" onclick="play('space_key')"></img>
         </div>
 
     </div>
