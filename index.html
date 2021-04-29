@@ -25,12 +25,25 @@
 .middlemiddlecolumnview {
 	float: left;
 	width: 50%;
+    max-height: 25%;
 	padding: 10px 10px;
 }
 
 .midspacecolumnview {
 	float: left;
 	width: 25%;
+	padding: 10px 10px;
+}
+
+.midspacecolumnviewhalf {
+	float: left;
+	width: 12.5%;
+	padding: 10px 10px;
+}
+
+.spacerowcenter {
+	float: left;
+	width: 44.75%;
 	padding: 10px 10px;
 }
 
@@ -151,6 +164,7 @@ body{
     margin: 0;
 }
 
+
 div{
 	padding: 0px;
 }
@@ -181,63 +195,41 @@ div{
     <div id="topkeyrow" class="row">
         <div id= "topkeyrowleftcol" class="columnview">
             <div id="qkeycol" class="column">
-                <div id="qkey" class="topkeycard" value="q_key" onclick="play('q_key')">
-                    <div class="blackkeycontainer">
-                        Q
-                    </div>
-                </div>
+                <img id="qkey" src="Drum Icons/OpenCymbal.png" value="q_key" onclick="play('q_key')">
+                    
+            </img>
             </div>
             <div id="wkeycol" class="column">
-                <div id="wkey" class="topkeycard" value="w_key" onclick="play('w_key')">
-                    <div class="blackkeycontainer">
-                        W
-                    </div>
-                </div>
+                <img id="wkey" src="Drum Icons/OpenCloseHat.png" value="w_key" onclick="play('w_key')">
+            </img>
             </div>
             <div id="ekeycol" class="column">
-                <div id="ekey" class="topkeycard" value="e_key" onclick="play('e_key')">
-                    <div class="blackkeycontainer">
-                        E
-                    </div>
-                </div>
+                <img id="ekey" src="Drum Icons/OpenCloseHat.png" value="e_key" onclick="play('e_key')">
+                    
+            </img>
             </div>
             <div id="rkeycol" class="column">
-                <div id="rkey" class="topkeycard" value="r_key" onclick="play('r_key')">
-                    <div class="blackkeycontainer">
-                        R
-                    </div>
-                </div>
+                <img id="rkey" src="Drum Icons/OpenCloseHat.png" value="r_key" onclick="play('r_key')">
+                    
+            </img>
             </div>
         </div>
 
         <div id= "topkeyrowrightcol" class="columnview">
             <div id="ukeycol" class="column">
-                <div id="ukey" class="topkeycard" value="u_key" onclick="play('u_key')">
-                    <div class="blackkeycontainer">
-                        U
-                    </div>
-                </div>
+                <img id="ukey" src="Drum Icons/OpenCymbal.png" value="u_key" onclick="play('u_key')"></img>
             </div>
             <div id="ikeycol" class="column">
-                <div id="ikey" class="topkeycard" value="i_key" onclick="play('i_key')">
-                    <div class="blackkeycontainer">
-                        I
-                    </div>
-                </div>
+                <img id="ikey" src="Drum Icons/OpenCymbal.png" value="i_key" onclick="play('i_key')">
+                </img>
             </div>
             <div id="okeycol" class="column">
-                <div id="okey" class="topkeycard" value="o_key" onclick="play('o_key')">
-                    <div class="blackkeycontainer">
-                        O
-                    </div>
-                </div>
+                <img id="okey" src="Drum Icons/OpenCymbal.png" value="o_key" onclick="play('o_key')">
+                </img>
             </div>
             <div id="pkeycol" class="column">
-                <div id="pkey" class="topkeycard" value="p_key" onclick="play('p_key')">
-                    <div class="blackkeycontainer">
-                        P
-                    </div>
-                </div>
+                <img id="pkey" src="Drum Icons/OpenCymbal.png" value="p_key" onclick="play('p_key')">
+                </img>
             </div>
         </div>
 
@@ -247,38 +239,27 @@ div{
         <div id="midkeyrowleftcol" class="midspacecolumnview">
             
         </div>
+
         
         <div id="midkeyrowmidcol" class="middlemiddlecolumnview">
             <div id="fkeycol" class="column">
-                <div id="fkey" class="midkeycard" value="f_key" onclick="play('f_key')">
-                    <div class="blackkeycontainer">
-                        F
-                    </div>
-                </div>
+                <img id="fkey" src="Drum Icons/SnareRim.png" value="f_key" onclick="play('f_key')">
+                    
+                </img>
             </div>
 
             <div id="gkeycol" class="column">
-                <div id="gkey" class="midkeycard" value="g_key" onclick="play('g_key')">
-                    <div class="blackkeycontainer">
-                        G
-                    </div>
-                </div>
+                <img id="gkey" src="Drum Icons/Snare.png" value="g_key" onclick="play('g_key')">
+                </img>
             </div>
 
             <div id="hkeycol" class="column">
-                <div id="hkey" class="midkeycard" value="h_key" onclick="play('h_key')">
-                    <div class="blackkeycontainer">
-                        H
-                    </div>
-                </div>
+                <img id="hkey" src="Drum Icons/Snare.png" value="h_key" onclick="play('h_key')">
+                </img>
             </div>
 
             <div id="jkeycol" class="column">
-                <div id="jkey" class="midkeycard" value="j_key" onclick="play('j_key')">
-                    <div class="blackkeycontainer">
-                        J
-                    </div>
-                </div>
+                <img id="jkey" src="Drum Icons/Tamborine.png" value="j_key" onclick="play('j_key')"></img>
             </div>
         </div>
 
@@ -288,21 +269,15 @@ div{
     </div>
 
     <div id="spacebarrow" class="row">
-        <div id="spacebarrowleftcol" class="midspacecolumnview">
+        <div id="spacebarrowleftcol" class="spacerowcenter">
 
         </div>
 
-        <div id="spacebarrowmidcol" class="middlemiddlecolumnview">
-                <div id="spacekey" class="spacekeycard" value="space_key" onclick="play('space_key')">
-                    <div class="keycontainer">
-                        Space Bar
-                    </div>
-                </div>
+
+        <div id="spacebarrowmidcol" class="midspacecolumnviewhalfhalf">
+                <img id="spacekey" src="Drum Icons/BassDrum.png" value="space_key" onclick="play('space_key')"></img>
         </div>
 
-        <div id="spacebarrowrightcol" class="midspacecolumnview">
-
-        </div>
     </div>
 
 </body>
