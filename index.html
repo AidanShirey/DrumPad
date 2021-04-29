@@ -47,6 +47,12 @@
 	padding: 10px 10px;
 }
 
+.spacerowtextcenter {
+	float: left;
+	width: 33%;
+	padding: 10px 10px;
+}
+
 .topbardropcolumn {
 	float: left;
     text-align: right;
@@ -106,7 +112,8 @@
 }
 
 .keycontainer {
- 	padding: 10px;
+ 	padding-bottom: 10px;
+    text-align: center;
     font-size: 18px;
  	height: 100%;
  	width: 100%;
@@ -234,6 +241,55 @@ div{
 
     </div>
 
+    <div id="topkeybindrow" class="row">
+        <div id= "topkeybindrowleftcol" class="columnview">
+            <div id="qkeycol" class="column">
+                <div class="keycontainer">
+                    Q
+                </div>
+            </div>
+            <div id="wkeycol" class="column">
+                <div class="keycontainer">
+                    W
+                </div>
+            </div>
+            <div id="ekeycol" class="column">
+                <div class="keycontainer">
+                    E
+                </div>
+            </div>
+            <div id="rkeycol" class="column">
+                <div class="keycontainer">
+                    R
+                </div>
+            </div>
+        </div>
+
+        <div id= "topkeybindrowrightcol" class="columnview">
+            <div id="ukeycol" class="column">
+                <div class="keycontainer">
+                    U
+                </div>
+            </div>
+            <div id="ikeycol" class="column">
+                <div class="keycontainer">
+                    I
+                </div>
+            </div>
+            <div id="okeycol" class="column">
+                <div class="keycontainer">
+                    O
+                </div>
+            </div>
+            <div id="pkeycol" class="column">
+                <div class="keycontainer">
+                    P
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <div id="midkeyrow" class="row">
         <div id="midkeyrowleftcol" class="midspacecolumnview">
             
@@ -267,6 +323,43 @@ div{
         </div>
     </div>
 
+    <div id="midkeyrow" class="row">
+        <div id="midkeyrowleftcol" class="midspacecolumnview">
+            
+        </div>
+
+        
+        <div id="midkeyrowmidcol" class="middlemiddlecolumnview">
+            <div id="fkeycol" class="column">
+                <div class="keycontainer">
+                    F
+                </div>
+            </div>
+
+            <div id="gkeycol" class="column">
+                <div class="keycontainer">
+                    G
+                </div>
+            </div>
+
+            <div id="hkeycol" class="column">
+                <div class="keycontainer">
+                    H
+                </div>
+            </div>
+
+            <div id="jkeycol" class="column">
+                <div class="keycontainer">
+                    J
+                </div>
+            </div>
+        </div>
+
+        <div id="midkeyrowrightcol" class="midspacecolumnview">
+            
+        </div>
+    </div>
+
     <div id="spacebarrow" class="row">
         <div id="spacebarrowleftcol" class="spacerowcenter">
 
@@ -277,6 +370,18 @@ div{
                 <img id="spacekey" value="space_key" onclick="play('space_key')"></img>
         </div>
 
+    </div>
+
+    <div id="spacebarrow" class="row">
+        <div id="spacebarrowleftcol" class="spacerowtextcenter">
+        
+        </div>
+
+        <div id="spacebarrowleftcol" class="spacerowtextcenter">
+            <div class="keycontainer">
+                Space Bar
+            </div>
+        </div>
     </div>
 
 </body>
