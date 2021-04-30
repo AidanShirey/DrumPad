@@ -1,7 +1,7 @@
-// Play Key Function
 var path = "Drum Samples/Acoustic/";
 var ipath = "Drum Icons/Acoustic/";
-
+// function setIcons(iconpath)
+// Input Type: String | I.E. "Acoustic" or "Electric"
 function setIcons(iconpath){
     var qKey = document.getElementById("qkey").getAttribute("value");
     document.getElementById("qkey").setAttribute("src", iconpath + qKey + ".png");
@@ -44,12 +44,15 @@ function setIcons(iconpath){
 }
 setIcons(ipath);
 
+// function play(samplename)
+// Input Type: String | I.E. "q_key"
 function play(samplename){
     var mPath = path + samplename + ".wav";
     var audio = new Audio(mPath);
     audio.play();
 }
 
+// EventListener for animation changes on key down press
 document.addEventListener("keydown", function(e){
     var key = e.key;
     switch (key){
@@ -121,6 +124,7 @@ document.addEventListener("keydown", function(e){
     }
  });
 
+ // EventListener for animation change on key up
 document.addEventListener("keyup", function(e){
     var key = e.key;
     switch (key){
@@ -179,8 +183,8 @@ document.addEventListener("keyup", function(e){
     }
  });
 
-
-
+// function setKeybinds(kitname)
+// Input Type: String | I.E. "Acoustic" or "Electric"
 function setKeybinds(kitname){
     path = "Drum Samples/" + kitname + "/";
     ipath = "Drum Icons/" + kitname + "/";
