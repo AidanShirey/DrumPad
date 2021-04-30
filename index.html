@@ -82,8 +82,8 @@
  	padding-bottom: 10px;
     text-align: center;
     font-size: 18px;
- 	height: 100%;
- 	width: 100%;
+ 	max-height: 100%;
+ 	max-width: 100%;
  	overflow-wrap: break-word;
 }
 
@@ -168,41 +168,31 @@ div{
     <div id="topkeyrow" class="row">
         <div id= "topkeyrowleftcol" class="columnview">
             <div id="qkeycol" class="column">
-                <img id="qkey" value="q_key" onclick="play('q_key')">
-                    
-            </img>
+                <img id="qkey" class="keycontainer" value="q_key" onclick="play('q_key')">  </img>
             </div>
             <div id="wkeycol" class="column">
-                <img id="wkey" value="w_key" onclick="play('w_key')">
-            </img>
+                <img id="wkey" class="keycontainer" value="w_key" onclick="play('w_key')"></img>
             </div>
             <div id="ekeycol" class="column">
-                <img id="ekey" value="e_key" onclick="play('e_key')">
-                    
-            </img>
+                <img id="ekey" class="keycontainer" value="e_key" onclick="play('e_key')"></img>
             </div>
             <div id="rkeycol" class="column">
-                <img id="rkey" value="r_key" onclick="play('r_key')">
-                    
-            </img>
+                <img id="rkey" class="keycontainer" value="r_key" onclick="play('r_key')"></img> 
             </div>
         </div>
 
         <div id= "topkeyrowrightcol" class="columnview">
             <div id="ukeycol" class="column">
-                <img id="ukey" value="u_key" onclick="play('u_key')"></img>
+                <img id="ukey" class="keycontainer" value="u_key" onclick="play('u_key')"></img> 
             </div>
             <div id="ikeycol" class="column">
-                <img id="ikey" value="i_key" onclick="play('i_key')">
-                </img>
+                <img id="ikey" class="keycontainer" value="i_key" onclick="play('i_key')"></img>     
             </div>
             <div id="okeycol" class="column">
-                <img id="okey" value="o_key" onclick="play('o_key')">
-                </img>
+                <img id="okey" class="keycontainer" value="o_key" onclick="play('o_key')"></img>
             </div>
             <div id="pkeycol" class="column">
-                <img id="pkey" value="p_key" onclick="play('p_key')">
-                </img>
+                <img id="pkey" class="keycontainer" value="p_key" onclick="play('p_key')"></img>
             </div>
         </div>
 
@@ -265,23 +255,19 @@ div{
         
         <div id="midkeyrowmidcol" class="middlemiddlecolumnview">
             <div id="fkeycol" class="column">
-                <img id="fkey" value="f_key" onclick="play('f_key')">
-                    
-                </img>
+                <img id="fkey" class="keycontainer" value="f_key" onclick="play('f_key')"></img>
             </div>
 
             <div id="gkeycol" class="column">
-                <img id="gkey" value="g_key" onclick="play('g_key')">
-                </img>
+                <img id="gkey" class="keycontainer" value="g_key" onclick="play('g_key')"></img>
             </div>
 
             <div id="hkeycol" class="column">
-                <img id="hkey" value="h_key" onclick="play('h_key')">
-                </img>
+                <img id="hkey" class="keycontainer" value="h_key" onclick="play('h_key')"></img>               
             </div>
 
             <div id="jkeycol" class="column">
-                <img id="jkey" value="j_key" onclick="play('j_key')"></img>
+                <img id="jkey" class="keycontainer" value="j_key" onclick="play('j_key')"></img> 
             </div>
         </div>
 
@@ -290,7 +276,7 @@ div{
         </div>
     </div>
 
-    <div id="midkeyrow" class="row">
+    <div id="midkeybindrow" class="row">
         <div id="midkeyrowleftcol" class="midspacecolumnview">
             
         </div>
@@ -334,7 +320,7 @@ div{
 
 
         <div id="spacebarrowmidcol" class="midspacecolumnviewhalfhalf">
-                <img id="spacekey" value="space_key" onclick="play('space_key')"></img>
+            <img id="spacekey" class="keycontainer" value="space_key" onclick="play('space_key')"></img>
         </div>
 
     </div>
